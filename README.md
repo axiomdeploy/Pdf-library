@@ -1,9 +1,11 @@
+
+```markdown
 # 📚 PDF Library
 
 আমার PDF সংগ্রহের ওয়েবসাইট। সবাই দেখতে পারবে, শুধু আমি edit করতে পারব।
 
 ## 🔗 Live Website
-https://axiomdeploy.github.io/Pdf-library/
+https://yourusername.github.io/pdf-library/
 
 ---
 
@@ -27,18 +29,28 @@ GitHub এ যাও → `index.html` ফাইলে click করো → ডা
     { label: "Drive Link", url: "https://drive.google.com/..." }
   ]
 },
-২টা link দিতে চাইলে:
+```
 
+**২টা link দিতে চাইলে:**
+```javascript
 links: [
   { label: "Drive Link", url: "https://drive.google.com/..." },
   { label: "Dropbox", url: "https://dropbox.com/..." }
 ],
-Link না দিতে চাইলে:
+```
 
+**Link না দিতে চাইলে:**
+```javascript
 links: [],
-২. নতুন Subject যোগ করা (যেমন: "ICT")
-যেই Section এর ভেতরে subjects array আছে সেখানে:
+```
 
+---
+
+### ২. নতুন Subject যোগ করা (যেমন: "ICT")
+
+যেই Section এর ভেতরে `subjects` array আছে সেখানে:
+
+```javascript
 {
   name: "ICT",
   pdfs: [
@@ -53,9 +65,15 @@ links: [],
     }
   ]
 },
-৩. নতুন Section যোগ করা (যেমন: "Main Books")
-libraryData array তে শেষ Section এর পরে comma দিয়ে:
+```
 
+---
+
+### ৩. নতুন Section যোগ করা (যেমন: "Main Books")
+
+`libraryData` array তে শেষ Section এর পরে comma দিয়ে:
+
+```javascript
 {
   title: "Main Books",
   subjects: [
@@ -75,40 +93,74 @@ libraryData array তে শেষ Section এর পরে comma দিয়�
     }
   ]
 }
-⚠️ শেষ Section এর পরে comma (,) দিতে ভুলো না!
+```
 
-৪. PDF এডিট করা
-নাম বদলাতে: title: "নতুন নাম" লিখো
-Description বদলাতে: desc: "নতুন description" লিখো
-Link বদলাতে: url: "নতুর link" লিখো
-Tag বদলাতে: tag: "নতুন tag" লিখো
-৫. PDF ডিলিট করা
-যেই { title: ..., links: ... } block টা মুছতে চাও, পুরো block টা (curly braces সহ) select করে delete করে দাও। শেষ block এর পরের comma ও মুছে দাও।
+⚠️ **শেষ Section এর পরে comma (,) দিতে ভুলো না!**
 
-🎨 Tag Colors
-Color	Code
-নীল (Cyan)	"cyan"
-বেগুনি	"purple"
-সবুজ	"green"
-হলুদ	"gold"
-গোলাপি	"pink"
-🔍 Search Features
-উপরের ডান কোণে search icon এ click করো
-বা keyboard এ / চাপো
-ভুল বানানেও খুঁজে পাবে (fuzzy search)
-Escape চাপলে search বন্ধ হবে
-⚠️ Common Problems
-সাইট আপডেট হচ্ছে না? → Browser এ Ctrl+Shift+R চাপো (hard refresh)
+---
 
-কিছু ভেঙে গেছে? → GitHub এ "History" তে গিয়ে previous version এ ফিরে যাও
+### ৪. PDF এডিট করা
 
-JavaScript error আসছে? → Comma (,) check করো — শেষ item এর পরে extra comma আছে কিনা
+- **নাম বদলাতে:** `title: "নতুন নাম"` লিখো
+- **Description বদলাতে:** `desc: "নতুন description"` লিখো  
+- **Link বদলাতে:** `url: "নতুর link"` লিখো
+- **Tag বদলাতে:** `tag: "নতুন tag"` লিখো
 
-📁 Files
+---
+
+### ৫. PDF ডিলিট করা
+
+যেই `{ title: ..., links: ... }` block টা মুছতে চাও,
+পুরো block টা (curly braces সহ) select করে delete করে দাও।
+শেষ block এর পরের comma ও মুছে দাও।
+
+---
+
+## 🎨 Tag Colors
+
+| Color | Code |
+|-------|------|
+| নীল (Cyan) | `"cyan"` |
+| বেগুনি | `"purple"` |
+| সবুজ | `"green"` |
+| হলুদ | `"gold"` |
+| গোলাপি | `"pink"` |
+
+---
+
+## 🔍 Search Features
+
+- উপরের ডান কোণে search icon এ click করো
+- বা keyboard এ `/` চাপো
+- **ভুল বানানেও খুঁজে পাবে** (fuzzy search)
+- `Escape` চাপলে search বন্ধ হবে
+
+---
+
+## ⚠️ Common Problems
+
+**সাইট আপডেট হচ্ছে না?**
+→ Browser এ `Ctrl+Shift+R` চাপো (hard refresh)
+
+**কিছু ভেঙে গেছে?**
+→ GitHub এ "History" তে গিয়ে previous version এ ফিরে যাও
+
+**JavaScript error আসছে?**
+→ Comma (,) check করো — শেষ item এর পরে extra comma আছে কিনা
+
+---
+
+## 📁 Files
+
+```
 ├── index.html   → মূল ফাইল (এটাই এডিট করতে হবে)
 └── README.md    → এই ফাইল (নির্দেশনা)
-© 2026 PDF Library
+```
 
+---
+
+© 2026 PDF Library
+```
 
 ---
 
